@@ -1,0 +1,89 @@
+/*src/components/AboutUs.css */
+.about-us-container {
+  padding: 0;
+  width: 100%;
+  margin: 0 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.about-us h2 {
+  padding: 20px; /* Adjusted for responsiveness */
+  font-size: 2.5rem;
+  background-color: #62420E;
+  color: #ffffff;
+  width: 100%;
+  text-transform: uppercase;
+  text-align:left;
+ 
+}
+
+/* Setions */
+.section1, .section2, .section3 {
+  margin:  30px 10px;
+  padding: 10px 90px;
+  align-items: center ;
+ 
+
+}
+
+/* Section Headings */
+.section1 h3, .section2 h3, .section3 h3 {
+  font-size: 1.8rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: bottom 20px;
+}
+
+
+/* Content Wrappers */
+.content1, .content2, .content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images */
+.content1 img, .content2 img, .content3 img {
+  max-width: 100%; /* Full width on small screens */
+  border-radius: 2px;
+  margin:10px 30px;
+  margin-top:30px;
+}
+
+/* Text Content */
+.content1 p, .content2 p, .content3 p {
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width:768px) {
+   /* Section Headings Alignment for larger screens */
+   .section1 h3{ 
+    text-align: center;
+    }
+    .section2 h3, .section3 h3 {
+      text-align: left; 
+    }
+/* Flex Direction for larger screens */
+.content1, .content2, .content3 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Adjusting image and text alignment on larger screens */
+.content1 img, .content2 img, .content3 img {
+  max-width: 45%;
+  margin-bottom: 0;
+}
+
+.content1 p, .content2 p, .content3 p {
+  flex: 5;
+  margin: 0 40px;
+}
+}

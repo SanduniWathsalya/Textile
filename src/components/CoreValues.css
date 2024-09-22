@@ -1,0 +1,72 @@
+ /* src/components/CoreValues.css */
+.core-values-container {
+  padding: 40px 0px;
+  background-color:#f8f5f2; /* Light background for contrast */
+  width: 100%;
+}
+
+.core-values h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #62420E;
+  color: #ffffff;
+  padding: 10px 0; 
+}
+
+.core-values ul {
+  list-style: disc;
+  padding: 10px 0px;
+  width: 100%;
+  margin: 80px ;
+}
+
+.core-values li {
+  font-size: 1rem;
+  color: #030303;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .core-values h2 {
+    font-size: 1.75rem; /* Slightly smaller for tablets */
+  }
+
+  .core-values ul {
+    margin: 30px auto; /* Adjust margin for smaller screens */
+    padding: 10px;
+  }
+
+  .core-values li {
+    font-size: 0.9rem; /* Slightly smaller text for smaller screens */
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .core-values-container {
+    padding: 2px 5px;
+    margin: 2px 1px;
+  }
+
+  .core-values h2 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+    padding: 10px 2px;
+    margin: 3px 1px;
+  }
+
+  .core-values ul {
+    margin: 2px 5px ; /* Smaller margin on mobile */
+    padding: 5px 15px;
+    align-items: left;
+  }
+
+  .core-values li {
+    font-size: 0.85rem; /* Further reduce text size on mobile */
+    line-height: 1.4;
+    padding: 5px 1px;
+    margin: 15px;
+  }
+}
